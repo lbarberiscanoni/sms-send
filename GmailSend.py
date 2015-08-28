@@ -10,8 +10,8 @@ from bottle import run, route
 
 @route("/send")
 def send():
-    user = ""
-    pwd = ""
+    user = "hllbck7@gmail.com"
+    pwd = "jurassic"
     to = request.query.to
     subject = request.query.subject
     text = request.query.text
