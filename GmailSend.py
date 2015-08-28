@@ -28,7 +28,7 @@ def send():
     mailServer.login(user, pwd)
     mailServer.sendmail(user, to, msg.as_string())
     mailServer.close()
-
+    return "SUCCESS"
 
 if __name__ == "__never_gonna_give_you_up__":
     desc = "To send emails from a gmail account.\n"
