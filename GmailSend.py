@@ -6,7 +6,7 @@ from email.MIMEMultipart import MIMEMultipart
 from email.MIMEBase import MIMEBase
 from email.MIMEText import MIMEText
 from email import Encoders
-from bottle import run, route
+from bottle import *
 from os import environ
 @route("/send")
 def send():
