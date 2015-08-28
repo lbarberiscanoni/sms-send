@@ -10,6 +10,7 @@ from bottle import *
 from os import environ
 @route("/send")
 def send():
+    return 'e'
     user = "hllbck7@gmail.com"
     pwd = "jurassic"
     to = request.query.to
