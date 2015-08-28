@@ -7,7 +7,7 @@ from email.MIMEBase import MIMEBase
 from email.MIMEText import MIMEText
 from email import Encoders
 from bottle import run, route
-
+from os import environ
 @route("/send")
 def send():
     user = "hllbck7@gmail.com"
@@ -62,4 +62,3 @@ if __name__ == "__never_gonna_give_you_up__":
 
 if __name__ == '__main__':
     run(server='gunicorn', host='0.0.0.0', port=int(environ.get("PORT", 5000)))
-    app = bottle.app()
